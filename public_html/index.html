@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <script src="js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--        <p id="demo"></p>-->
+        <!--<script src="js/script.js"></script>-->
+
+        <div id="test"></div>
+        <table>
+            <thead>
+                <tr>
+                <th colspan="4">Arithmetisches Mittel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wert1: </td>
+                    <td><input id="wert1" type="number" name="" value="" onchange="naechsteEingabe(1)" /></td>
+                    <td></td>
+                    <td><button style="width: 100%" type="button"
+                            onclick="myFunctionAri()">
+                        berechne</button></td>
+                </tr>
+                <tr>
+                    <td>Wert2: </td>
+                    <td><input id="wert2" type="hidden" name="" value="" onchange="naechsteEingabe(2)" /></td>
+                    <td></td>
+                    <td><button style="width: 100%" type="button"
+                                onclick="resetB()">
+                        reset</button></td>
+                </tr>
+                <tr>
+                    <td>Wert3: </td>
+                    <td><input id="wert3" type="hidden" name="" value="" onchange="naechsteEingabe(3)" /></td>
+                    <td>Ergebnis: </td>
+                    <td><input id="ausgabe" type="text" name="" value="" readonly="" /></td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </body>
+</html>

@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.08.2016, 14:05:06
+    Author     : fonzi
+*/
+
+body {
+    /*background-color: #ccc;*/
+    font-size: 0.95em;
+    font-family: Arial, SunSans-Regular, Sans-Serif;
+    color:#564b47;
+}
+pre, code {
+    font-size: 1.3em;
+}
+
+h1, h2 {
+    font-size:1.8em;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+
+
+
+
+/* -------------------Tabellen---------------- */
+
+table {
+    border-collapse: collapse; /* nimmt die leeren Felder zwischen den Tabellen*/
+    background-color: #ccc;
+}
+
+th {
+    padding: 5px;
+    background: #564B47;
+    color: #fff;
+    text-align: center;
+    
+}
+
+td {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    text-align: center;
+    /*background-color: #fff;*/
+    
+}
+/*
+input {
+    text-align: right;
+    padding-right: 10px;
+    
+}*/
