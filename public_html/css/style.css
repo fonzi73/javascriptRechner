@@ -9,10 +9,11 @@ and open the template in the editor.
 */
 
 body {
-    /*background-color: #ccc;*/
+    background-color: #fff;
     font-size: 0.95em;
     font-family: Arial, SunSans-Regular, Sans-Serif;
     color:#564b47;
+    z-index: -1;
 }
 pre, code {
     font-size: 1.3em;
@@ -24,23 +25,21 @@ h1, h2 {
     margin: 0 0 20px;
 }
 
-
-
-
-
 /* -------------------Tabellen---------------- */
 
 table {
-    border-collapse: collapse; /* nimmt die leeren Felder zwischen den Tabellen*/
-    background-color: #ccc;
+    border-collapse: collapse; /* nimmt die leeren Felder zwischen den Tabellen */
+    /*background-color: red;*/
+    background: transparent;
 }
 
 th {
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
     background: #564B47;
     color: #fff;
-    text-align: center;
-    
 }
 
 td {
@@ -49,7 +48,7 @@ td {
     padding-top: 5px;
     padding-right: 10px;
     text-align: center;
-    /*background-color: #fff;*/
+    background-color: #ccc;
     
 }
 /*
@@ -58,3 +57,24 @@ input {
     padding-right: 10px;
     
 }*/
+
+#pos1 {
+    position: relative;
+    top: 0px;
+    z-index: 3;
+    
+    }
+
+#pos2 {
+    position: absolute;
+    top: 0px;
+    left: 222px;
+    z-index: 3;
+   }
+
+#box {
+    position: absolute;
+    background-color: #ccc;
+    z-index: 1;
+    width: 473px;
+}

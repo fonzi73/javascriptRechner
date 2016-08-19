@@ -1,34 +1,38 @@
-var eingabe = 0;
 function naechsteEingabe(eingabeAktuell) {
-    document.getElementById("wert" + (++eingabeAktuell)).type = "number";
-    if (eingabeAktuell === 2){
-        eingabe += 1;
+    if (document.getElementById("wert1").value !== "") {
+        var zeile = '<tr>\n\
+                <td></td>\n\
+                <td><input id="" type="number" name="" value="' + document.getElementById("wert1").value + '" /></td>\n\
+                </tr>';
+        document.getElementById("janko").innerHTML += zeile;
     }
-    eingabe += 1;
-    document.getElementById("test").innerHTML = eingabe;
+//                document.getElementById("wert1").focus();
+//            document.getElementById("wert" + (++eingabeAktuell)).type = "number";
 }
 
 function myFunctionAri() {
-
     var i;
     var sum = 0;
-    for (i = 0; i <  3; i++) {
-        sum += parseInt(document.getElementById("wert" + (i + 1)).value);
+    var zaehler = 0;
+    var anzahl = document.forms[0].elements.length;
+    for (i = 1; i < anzahl; i++) {
+////        document.getElementById("test").innerHTML = parseInt(document.getElementById("wert" + (i + 1)).value);
+        if (document.forms[0].elements[i].value !== "") {
+            sum += parseInt(document.forms[0].elements[i].value);
+            zaehler++;
+        }
     }
-    document.getElementById("ausgabe").value = sum / eingabe;
-    eingabe = 0;
+    if (zaehler > 0) {
+        document.getElementById("ausgabe").value = sum / zaehler;
+    }
 }
 
-function resetB(){
-    var i;
-    for (i = 0; i < 3; i++){
-        if(i === 0){
-            var j;
-            for (j = 0; j < 3; j++){
-            document.getElementById("wert" + (j + 1)).value = "";
-        }} else{
-        document.getElementById("wert" + (i +1)).type = "hidden";       
-    }
-    }
+function resetButton() {
+
+    var jankoStart = '<tr>\n\
+                    <td>Wert: </td>\n\
+                    <td><input id="wert1" type="number" name="" value="" onblur="naechsteEingabe()" /></td>\n\
+                    </tr>';
+    document.getElementById("janko").innerHTML = jankoStart;
     document.getElementById("ausgabe").value = "";
 }
